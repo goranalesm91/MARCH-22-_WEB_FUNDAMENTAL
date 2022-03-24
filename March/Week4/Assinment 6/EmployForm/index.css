@@ -1,0 +1,10 @@
+.Sm{
+    border: 3px solid rgba(20, 13, 13, 0.76);
+    padding: 10px;
+    margin: 20px;
+    background-color: aqua;
+    width: 200px;
+}
+.btn{
+    background-color: blueviolet;
+}
