@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="index.css">
+</head>
+<body>
+    <form></form>
+    <div>
+        <label for ="email"> Email :</label>
+        <br>
+        <input type ="email" placeholder="abc@gmail.com" required>
+
+        <br>
+        <label for =password>Password :</label>
+        <br>
+        <input type="password" id="password" name="password" pattern=".{8,}" title="must be eight charector" >
+
+        <br>
+       <p>Select The Favorite<b> Web Longuage</b></p>
+
+        <input type="checkbox" value ="css" name="web_lang" id="css" checked>
+        <label for="css">CSS</label>
+        <br>
+        <input type="checkbox" value ="html" id="html" name="web_lang">
+        <label for="html">HTML</label>
+        <br>
+        <input type="checkbox" value ="js" id="js" name="web_lang">
+        <label for="js">JavaScript</label>
+        <br>
+        <label>Name :</label>
+        <br>
+        <input type="text" placeholder="name surname" required> 
+        <br>
+        <label>Phon Number :</label>
+        <br>
+        <input type="number" placeholder="9130124591" pattern="[789][0-9]{9}"required>
+        <br>
+        <button id ="btn">submit</button>
+
+
+    </div>
+</form>
+</body>
+</html>

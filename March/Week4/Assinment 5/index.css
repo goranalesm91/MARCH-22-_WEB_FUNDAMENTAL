@@ -1,0 +1,21 @@
+div{
+   background-color: aquamarine;
+padding-bottom: 30px;
+}
+#w1{
+    color: blue;
+    padding-left: 20px;
+}
+#r1{
+    color: red;
+    padding-left: 10px;
+
+}
+#w2{
+    color: rgb(29, 26, 4);
+    padding-left: 2px;
+    margin: 3px;
+}
+#a1{
+    padding-bottom: 300px;
+}
