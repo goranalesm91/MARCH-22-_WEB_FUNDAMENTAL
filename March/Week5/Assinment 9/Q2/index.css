@@ -1,0 +1,55 @@
+.container{
+    width: 700px;
+    height: 500px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6,1fr);
+
+    
+    column-gap: 5px;
+   
+}
+.iteam{
+    background-color: blueviolet;
+    border: 3px solid orangered;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+.A{
+    grid-column: 1 /span 2;
+}
+.G{
+    grid-row: 3 /span 2;
+    grid-column:1 /span 2 ;
+}
+.H{
+    grid-column:3 /span 1 ;
+    grid-row: 3 /span 1;
+}
+.I{
+    grid-column:4 /span 1 ;
+    grid-row: 3 /span 1;
+}
+.K{
+    grid-column:1 /span 3 ;
+    grid-row: 5 /span 1;
+}
+.J{  
+    grid-column:3 /span 1 ;
+    grid-row: 4 /span 1;
+}
+.L{
+    grid-column:4 /span 1 ;
+    grid-row: 5 /span 1;
+}
+.M{
+    grid-row:6 /span 1;
+    grid-column: 1 /span 1;
+}
+
+
+}

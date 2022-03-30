@@ -1,0 +1,35 @@
+.container{
+    width: 700px;
+    height: 500px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    
+    column-gap: 10px;
+    
+
+
+}
+
+.iteam{
+    
+    
+    border: 5px solid blue;
+    background-color: rgb(100, 133, 226);
+    border-radius: 5px;
+    margin: 5PX;
+
+}
+.A{
+    grid-column:1 /span 2;
+}
+.B{
+    grid-column: 3/spam 1;
+    grid-row:1/spam 2 ;
+    margin: 5px;
+
+}
