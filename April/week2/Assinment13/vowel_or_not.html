@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <div style="border: 2px solid blue; width: 200px; height: 80px;">
+     <input type="text" name="a" id="first" placeholder="Enter character"/><br>
+    <button onclick = "vowel()">Submit</button>
+    <div id="num"></div>
+</div>
+</center>
+   
+<script type="text/javascript">
+    function vowel()
+    {
+    var ch;
+    ch = document.getElementById("first").value;
+    switch(ch)
+    {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    case 'A':
+    case 'E':
+    case 'I':
+    case 'O':
+    case 'U':
+    document.getElementById("num"). innerHTML= "it is vowel";
+    break;
+    default: document.getElementById("num"). innerHTML= "it is not vowel";
+    break;
+    }
+    }
+    </script>
+</body>
+</html>
