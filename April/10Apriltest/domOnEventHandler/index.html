@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <div style="border: 2px solid blue; width: 200px; height: 160px;">
+            <h3>DOM on-event handler</h3>
+            <input type="text" name="a" id="first" placeholder="Enter number"/><br/><br/>
+
+            <button onclick = "rednum()">Submit</button>
+</div>
+</center>
+   
+<script >
+    function rednum()
+    {
+    var input;
+    input = document.getElementById("first").value;
+    alert('You Enterd Input Is:-  '+ input);
+    
+    
+    }
+    </script>
+</body>
+</html>
