@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    margin: 100px auto;
+}
+button{
+    background-color: rgb(21, 18, 211);
+    border: none;
+    color: rgb(18, 243, 67);
+    padding: 10px 30px;
+     margin-right: 10px;}
+    </style>
+</head>
+<body>
+    <div>
+        <img id="img-1"
+        src="https://thumbs.dreamstime.com/b/friends-friendship-fist-togetherness-concept-89799929.jpg"
+        width="400"
+        height="400"
+        
+        />
+        
+        <br>
+        <button onclick="friend()"> Friend</button>
+        <button onclick="family()"> Family</button>
+    </div>
+    <script>
+        function friend(){
+
+var imgref_1= document.getElementById("img-1");
+imgref_1.src="https://thumbs.dreamstime.com/b/friends-friendship-fist-togetherness-concept-89799929.jpg";
+imgref_1.style.borderRadius="0%";
+}
+
+function family(){
+//need reference
+var imgref_2= document.getElementById("img-1");
+//need change the value of scr
+imgref_2.src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/family-quotes-1642545040.jpeg?crop=1xw:0.75xh;center,top&resize=640:*";
+
+imgref_2.style.borderRadius="50%";
+
+
+
+}
+    </script>
+</body>
+</html>
