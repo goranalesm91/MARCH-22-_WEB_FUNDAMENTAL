@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            box-shadow: 2px rgb(190, 173, 173);
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .cotainer{
+            background-color: rgb(202, 158, 144);
+            border: 2px solid rgb(236, 75, 142);
+            width: 40vh;
+            height: 50vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            margin: 5px;
+           
+            
+              }
+            img{
+               
+                border-radius:30%;
+                padding: 10px;
+            }
+            h3{
+                color: rgb(5, 5, 107);
+            }
+
+    </style>
+</head>
+<body>
+    <script >
+        const pref= document.querySelector("body")
+        
+        function getUsers(){
+            fetch("https://reqres.in/api/users?page=2")
+            .then((res)=>{
+              //  console.log(res)
+                return res.json();
+            })
+            .then((dta)=>{
+               console.log(dta)
+               const users= dta.data
+               console.log(users)
+                var id =0
+               for(var i=0;i<=users.length;i++){
+                   id++
+               var preff=document.createElement('div')
+               preff.innerHTML=`<div class="cotainer"><div>${id}</div>
+               <div><img src="${users[i].avatar}"/></div><h2>${users[i].first_name+" "+users[i].last_name}</h2>
+               <h3>${users[i].email}</h3>
+                </div> `
+
+               pref.appendChild(preff)
+
+               
+               }      
+            
+        })
+    }
+    getUsers()
+
+        
+    </script>
+    
+</body>
+</html>
