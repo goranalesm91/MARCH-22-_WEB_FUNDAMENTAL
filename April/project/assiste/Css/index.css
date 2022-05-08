@@ -1,0 +1,8 @@
+.card:hover {
+    z-index: 9999;
+    transform: scale(1.15);
+    border: 3px solid black;
+}
+.card{
+    transition: all 0.25s;
+}
